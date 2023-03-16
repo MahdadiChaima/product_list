@@ -15,7 +15,9 @@ class FavoriteViewModel extends BaseViewModel {
 
   init() {
     favoritesProduct = getFavoritesProduct();
+    numberFavouriteProducts=favoritesProduct.length;
     setOnModelReadyCalled(true);
+
   }
   int numberFavouriteProducts=0;
   List<Product> favoritesProduct = [];
